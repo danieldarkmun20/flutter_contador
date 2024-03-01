@@ -6,14 +6,20 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return const MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: CounterScreen(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.red, // Define el color primario de la paleta
+          // Puedes definir otros colores de la paleta aquí, como accentColor, etc.
+        ),
+        // Otros atributos de tu tema
+      ),
+      home: const CounterScreen(),
     );
   }
 }
