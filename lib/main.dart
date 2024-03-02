@@ -13,11 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.red, // Define el color primario de la paleta
-          // Puedes definir otros colores de la paleta aquí, como accentColor, etc.
-        ),
-        // Otros atributos de tu tema
+        colorSchemeSeed: Colors.red
       ),
       home: const CounterScreen(),
     );
