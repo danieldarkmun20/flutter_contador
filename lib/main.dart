@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorSchemeSeed: Colors.red
       ),
-      home: const CounterScreen(),
+      home: const CounterFunctionScreen(),
     );
   }
 }
